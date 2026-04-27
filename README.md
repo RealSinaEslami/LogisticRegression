@@ -5,40 +5,40 @@ A clean, minimal, and fully‑explained implementation of Logistic Regression fr
 This project demonstrates how the core components of logistic regression work internally, without relying on machine‑learning libraries such as scikit‑learn.
 ______________
 🚀 Features
-Manual implementation of:
-Sigmoid activation
-Binary Cross‑Entropy (BCE) Loss
-Gradient computation
-Weight & bias update (Gradient Descent optimizer)
-Fully vectorized NumPy operations
-Customizable learning rate and number of epochs
-Training loop with loss tracking
-Prediction using a probability threshold (default = 0.5)
-Clean, readable class‑based structure
+* Manual implementation of:
+* Sigmoid activation
+* Binary Cross‑Entropy (BCE) Loss
+* Gradient computation
+* Weight & bias update (Gradient Descent optimizer)
+* Fully vectorized NumPy operations
+* Customizable learning rate and number of epochs
+* Training loop with loss tracking
+* Prediction using a probability threshold (default = 0.5)
+* Clean, readable class‑based structure
 ______________
 🧠 How It Works
 1. Forward Pass
 Computes:
 
-Linear combination:z = X · w + b
-Sigmoid activation:y_hat = 1 / (1 + exp(-z))
+* Linear combination:z = X · w + b
+* Sigmoid activation:y_hat = 1 / (1 + exp(-z))
+
 2. Loss Function
 Binary Cross‑Entropy:
 
-Loss = - ( y*log(y_hat) + (1 - y)*log(1 - y_hat) )
+* Loss = - ( y*log(y_hat) + (1 - y)*log(1 - y_hat) )
+
 3. Gradient Calculation
-grad_w = X.T · (y_hat - y) / N
-grad_b = sum(y_hat - y) / N
+* grad_w = X.T · (y_hat - y) / N
+* grad_b = sum(y_hat - y) / N
+
 4. Weight Update (Optimizer)
 (Stochastic Gradient Descent)
 
-w = w - lr * grad_w
-b = b - lr * grad_b
+* w = w - lr * grad_w
+* b = b - lr * grad_b
 
 🧪 Usage Example
-python
-import numpy as np
-from logistic_regression import LogisticRegression
 
 # Sample dataset
 X = np.array([
@@ -71,11 +71,11 @@ Predictions: [1 0 1 0 1]
 
 ______________
 🧩 TODO / Future Improvements
-Add regularization (L2 / L1)
-Add support for batch gradient descent
-Implement different optimizers (Momentum, Adam)
-Plot loss curve automatically
-Add dataset loading utilities
+* Add regularization (L2 / L1)
+* Add support for batch gradient descent
+* Implement different optimizers (Momentum, Adam)
+* Plot loss curve automatically
+* Add dataset loading utilities
 
 ______________
 ❤️ Contributing
