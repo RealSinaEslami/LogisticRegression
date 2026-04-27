@@ -3,7 +3,7 @@ ___________________
 A clean, minimal, and fully‑explained implementation of Logistic Regression from scratch using only NumPy.
 
 This project demonstrates how the core components of logistic regression work internally, without relying on machine‑learning libraries such as scikit‑learn.
-
+______________
 🚀 Features
 Manual implementation of:
 Sigmoid activation
@@ -15,12 +15,7 @@ Customizable learning rate and number of epochs
 Training loop with loss tracking
 Prediction using a probability threshold (default = 0.5)
 Clean, readable class‑based structure
-📌 Project Structure
-text
-.
-├── logistic_regression.py     # Model implementation
-├── main.py                    # Example usage / training script
-└── README.md                  # Project documentation
+______________
 🧠 How It Works
 1. Forward Pass
 Computes:
@@ -64,6 +59,8 @@ model.train(lr=0.1)
 # Predict
 preds = model.predict(X)
 print("Predictions:", preds)
+
+______________
 📊 Example Output
 text
 Epoch 100 | Loss: 0.532
@@ -71,17 +68,22 @@ Epoch 200 | Loss: 0.431
 Epoch 300 | Loss: 0.366
 ...
 Predictions: [1 0 1 0 1]
+
+______________
 🧩 TODO / Future Improvements
 Add regularization (L2 / L1)
 Add support for batch gradient descent
 Implement different optimizers (Momentum, Adam)
 Plot loss curve automatically
 Add dataset loading utilities
+
+______________
 ❤️ Contributing
 Pull requests and suggestions are welcome!
 
 Feel free to open an issue if you find a bug or want to request a feature.
 
+______________
 📄 License
 This project is released under the MIT License.
 
